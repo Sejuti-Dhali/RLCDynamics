@@ -1,2 +1,4 @@
-# RLCDynamics
-Interactive RLC circuit simulator for transient response, capacitor current analysis, and electrical system dynamics.
+# RLC Dynamics
+Interactive ideal-component transient simulator based on Problem 1.3, Figures 1.7–1.11 of the supplied NI Multisim lab report (multisim lab 2.pdf). Open index.html or deploy main / root with GitHub Pages. No dependencies.
+
+The circuit has R1 from source to A, C1 from A to ground, L1 and C3 in parallel between A and B, and C2 and R2 from B to ground. Default values: 1 ohm each resistor, 0.25223 H, 1 F each C1/C2, 3.294 F C3; 1 V pulse, 5 s high, 8 s period. RK4 uses a maximum 1 ms integration step and splits pulse edges. Zero initial energy is assumed. Output is sampled every 10 ms over 20 s. Results are calculated, not measurements. Original report screenshots are included for qualitative comparison; no quantitative validation against Multisim was performed. Confirm permission before publishing the screenshots.
